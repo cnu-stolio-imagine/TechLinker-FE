@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BigK</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="styles/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">BIGK</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/home">메인 홈</a></li>
+          <li><a class="nav-link scrollto" href="/about">소개</a></li>
+          <li><a class="nav-link scrollto" href="/services">서비스</a></li>
+          <li class="dropdown"><a href="inner-page.html"><span>R&D 사업</span> </a>
+
+          </li>
+          <li><a class="nav-link scrollto" href="login.html">로그인</a></li>
+          <li><a class="nav-link scrollto" href="signup.html">회원가입</a></li>
+          <li><a class="getstarted scrollto" href="mms.html">알림 받기</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">메인 홈</a></li>
+          <li>알림받기</li>
+        </ol>
+        <h2>사업 알림 받기</h2>
+      </div>
+    </section>
+
+    <section class="inner-page">
+
+      <h4 style="text-align: center;">[ 원하는 사업 키워드 클릭 ]</h4>
+      <img src="assets/click.png" alt="클릭" style="max-width: 3%; height: auto; margin-left: 840px; ">
+
+      <div class="container">
+        <div class="mms--box" style="margin-top: 50px;">
+          <table>
+            <tr>
+              <th id="category-people" onclick="toggleCategory(this)">인력 양성 사업</th>
+              <th id="category-tech" onclick="toggleCategory(this)">기술 개발 사업</th>
+              <th id="category-planning" onclick="toggleCategory(this)">자율 지정 공모</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mms--box">
+          <table>
+            <tr>
+
+              <td id="category-a" onclick="toggleCategory(this)">우주</td>
+              <td id="category-b" onclick="toggleCategory(this)">항공</td>
+              <td id="category-c" onclick="toggleCategory(this)">국방</td>
+              <td id="category-d" onclick="toggleCategory(this)">의료</td>
+              <td id="category-e" onclick="toggleCategory(this)">자동차</td>
+            </tr>
+            
+            <tr>
+              <td id="category-f" onclick="toggleCategory(this)">인공지능</td>
+              <td id="category-g" onclick="toggleCategory(this)">일반소비재</td>
+              <td id="category-h" onclick="toggleCategory(this)">기계</td>
+              <td id="category-i" onclick="toggleCategory(this)">화학</td>
+              <td id="category-j" onclick="toggleCategory(this)">바이오</td>
+            </tr>
+            <tr>
+              <td id="category-k" onclick="toggleCategory(this)">에너지</td>
+              <td id="category-l" onclick="toggleCategory(this)">해양</td>
+              <td id="category-m" onclick="toggleCategory(this)">IT</td>
+              <td id="category-n" onclick="toggleCategory(this)">ICT통신</td>
+              <td id="category-o" onclick="toggleCategory(this)">건설</td>
+            </tr>
+
+            <tr>
+
+              <td id="category-p" onclick="toggleCategory(this)">선박</td>
+              <td id="category-q" onclick="toggleCategory(this)">반도체</td>
+              <td id="category-r" onclick="toggleCategory(this)">배터리</td>
+              <td id="category-s" onclick="toggleCategory(this)">산림</td>
+              <td id="category-t" onclick="toggleCategory(this)">광학</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="mms--box">
+          <table>
+            <tr>
+
+              <td id="category-1" onclick="toggleCategory(this)">소재/원재료</td>
+              <td id="category-2" onclick="toggleCategory(this)">제조/공정</td>
+              <td id="category-3" onclick="toggleCategory(this)">모듈</td>
+            </tr>
+            <tr>
+              <td id="category-4" onclick="toggleCategory(this)">소프트웨어</td>
+              <td id="category-5" onclick="toggleCategory(this)">제품</td>
+              <td id="category-6" onclick="toggleCategory(this)">통합시스템</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 20px;">
+          <button onclick="saveCategories()"
+            style="padding: 10px 30px; font-size: 20px; background-color: #34476d; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            키워드 저장하기
+          </button>
+        </div>
+
+
+      </div>
+
+      <br>
+      <h6 style="text-align: center;">위에서 선택하신 키워드와 관련된 사업공고를 메일로 보내드립니다.</h6>
+
+
+
+    </section>
+
+
+  </main>
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <!-- <h4>정부 사업 알림 받기</h4> -->
+            <h4>메일 주소 입력 <h4>
+                <!-- <p><기업의 관심 키워드에 맞춰 사업 공고를 전송합니다. </p> -->
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="메일 입력">
+                </form>
+                <br>
+                <h5>연간 구독 서비스로 주요 정부 사업 알림을 실시간 제공받을 수 있습니다.</h5><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="src/main.js"></script>
+
+    <script>
+      // 선택된 카테고리를 저장할 배열
+      let selectedCategories = [];
+
+      // 카테고리 선택 토글 함수
+      function toggleCategory(element) {
+        const categoryId = element.id;
+        const categoryIndex = selectedCategories.indexOf(categoryId);
+
+        if (categoryIndex > -1) {
+          // 이미 선택된 경우, 배열에서 제거
+          selectedCategories.splice(categoryIndex, 1);
+          element.classList.remove('active');
+        } else {
+          // 선택되지 않은 경우, 배열에 추가
+          selectedCategories.push(categoryId);
+          element.classList.add('active');
+
+          // 선택된 카테고리를 콘솔에 출력
+          console.log('선택된 카테고리:', selectedCategories);
+        }
+      }
+
+      function saveCategories() {
+        console.log('저장할 카테고리:', selectedCategories); // 저장할 카테고리를 콘솔에 출력
+        fetch('http://127.0.0.1:5500/save-categories', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ categories: selectedCategories }),
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log('성공:', data);
+            alert('카테고리가 성공적으로 저장되었습니다!');
+          })
+          .catch((error) => {
+            console.error('오류:', error);
+          });
+      }
+
+
+      function displayList() {
+        const element = document.getElementById('your-element-id');
+        if (element) {
+          element.innerHTML = 'Some content';
+        } else {
+          console.error('Element not found');
+        }
+      }
+
+    </script>
+
+</body>
+
+</html>
